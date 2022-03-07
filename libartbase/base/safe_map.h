@@ -72,6 +72,8 @@ class SafeMap {
   iterator erase(iterator it) { return map_.erase(it); }
   template<typename Kv> size_type erase(const Kv& k) { return map_.erase(k); }
 
+  std::pair<iterator, bool> insert(value_type&& value) { return map_.insert(std::move(value)); }
+
   template<typename Kv> iterator find(const Kv& k) { return map_.find(k); }
   template<typename Kv> const_iterator find(const Kv& k) const { return map_.find(k); }
 
