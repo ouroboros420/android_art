@@ -104,7 +104,6 @@ enum LockLevel : uint8_t {
   kAllocatedThreadIdsLock,
   kMonitorPoolLock,
   kClassLinkerClassesLock,  // TODO rename.
-  kDexToDexCompilerLock,
   kSubtypeCheckLock,
   kBreakpointLock,
   // This is a generic lock level for a lock meant to be gained after having a
